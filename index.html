@@ -32,6 +32,20 @@
                 font-size: 3.5rem;
             }
         }
+
+        .carousel-inner {
+            height: 800px; /* 슬라이드의 고정 높이 */
+            overflow: hidden; /* 높이를 넘어가는 부분 숨기기 */
+            display: flex; /* 이미지 세로 중앙 정렬을 위해 flex 사용 */
+            align-items: center; /* 세로 중앙 정렬 */
+        }
+
+        .carousel-inner img {
+            width: 100%; /* 가로 크기를 슬라이드에 맞추기 */
+            height: auto; /* 짧은 이미지는 원래 비율을 유지 */
+            object-fit: cover; /* 이미지가 슬라이드를 꽉 채우도록 */
+            max-height: 100%; /* 슬라이드 높이 이상으로 확대되지 않도록 */
+        }
     </style>
     <!-- Custom styles for this template -->
     <link href="assets/css/custom.css" rel="stylesheet">
